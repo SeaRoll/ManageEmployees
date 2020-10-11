@@ -1,0 +1,35 @@
+<!-- Edit Modal HTML -->
+<div id="editEmployeeModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form action="/changeemployee" method="POST">
+				<div class="modal-header">						
+					<h4 class="modal-title">Edit Employee</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Name</label>
+						<input name="name" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input name="email" type="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Address</label>
+						<textarea name="address" class="form-control"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Phone</label>
+						<input name="phone" type="text" class="form-control">
+					</div>					
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<button id="editbutton" name="changebuttonid" type="submit" class="btn btn-info" value="_id">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
